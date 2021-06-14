@@ -1,0 +1,939 @@
+@import './base/reset';
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+}
+%roboto-list{
+    font-family: 'Roboto';
+    font-style: normal;
+    color: white;
+}
+%Montserrat-bold-list{
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: white;
+}
+%Montserrat-light-list{
+    font-family: 'Montserrat-light';
+    font-style: normal;
+    color: white;
+}
+.conteiner{
+    width: 1440px;
+    height: 3451px;
+    margin: 0 auto;
+    .header{
+        width: 100%;
+        height: 700px;
+        background-image: url(../images/header.png);
+        position: relative;
+        .header-absolute{
+            box-sizing: border-box;
+            position: absolute;
+            width: 1440px;
+            height: 700px;
+            padding: 40px 291px 224px 248px;
+            .text-1{
+                width: 100%;
+                height: 36px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 147.5px;
+                .Dreamshare{
+                    width: 152px;
+                    height: 24px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: white;
+                }
+                .groupLogSign{
+                    width: 153px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .links{
+                        @extend %Montserrat-bold-list;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 36px;
+                        text-decoration: none;
+                    }
+                    .Sign{
+                        width: 84px;
+                        height: 30px;
+                        border: white 3px solid;
+                        border-radius: 40px;
+                        text-align: center;
+                        .line{
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+            .header-bottext{
+                display: block;
+                height: 252.5px;
+                width: 470px;
+                margin: 0 237px;
+                text-align: center;
+                .BigHeadText{
+                    @extend %Montserrat-bold-list;
+                    font-weight: bold;
+                    font-size: 52px;
+                    line-height: 63px;
+                    margin-bottom: 28.5px
+                }
+                .RobotoHead{
+                    @extend %roboto-list;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 24px;
+                    margin-bottom: 33px;
+                }
+                .underline{
+                    text-decoration: none;
+                        .buttom-head{
+                            @extend %Montserrat-light-list;
+                            width: 225px;
+                            height: 40px;
+                            background-color: #FF4E50;
+                            border-radius: 40px;
+                            text-align: center;
+                            margin: auto;
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 40px;
+                            
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: #ca2d30;
+                                    transform: scale(1.1);
+        
+                                }
+                            }
+                }
+            }
+        }
+    }
+    .content{
+        box-sizing: border-box;
+        width: 940px;
+        height: 2491px;
+        margin: 0 auto;
+        padding-top:  92px;        
+        .ContMainText{
+            @extend %Montserrat-bold-list;
+            font-size: 26px;
+            color: black;
+            margin: 0 299px 38px;
+        }
+        .contentTop{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 95px;
+            .img1{
+                background-image: url('../images/img1.png');
+            }
+            .img2{
+                background-image: url('../images/img2.png');
+            }
+            .img3{
+                background-image: url('../images/img3.png');
+            }
+            .Trio{
+                width: 300px;
+                height: 400px;
+                border-radius: 5px;
+                background-size: cover;
+                .TrioAbsolute{
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    padding: 0 25px;
+                    .inPad{
+                        padding-top: 33px;
+                    }
+                    .inbox{
+                        box-sizing: border-box;
+                        width: 100%;
+                        height: 181px;
+                        .Steps{
+                            @extend %Montserrat-light-list;
+                            width: 70px;
+                            height: 20px;
+                            background-color: #FF4E50;
+                            border-radius: 40px;
+                            text-align: center;
+                            margin-bottom: 24px;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 20px;
+                            
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: #ca2d30;
+                                    transform: scale(1.1);
+        
+                                }
+                        }
+                        .BigTrioText{
+                            @extend %Montserrat-bold-list;
+                            font-weight: bold;
+                            font-size: 24px;
+                            margin-bottom: 27px;   
+                        }
+                        .BigTrioText-center{
+                            margin-bottom: 18px;
+                        }
+                        .RobotoTrio{
+                            @extend %roboto-list;
+                            font-weight: 300;
+                            font-size: 14px;
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+        .Partners{
+            width: 941px;
+            height: 361px;
+            margin: 0 auto 95px;
+            .Partners-marg{
+                width: 491px;
+                height: 32px;
+                box-sizing: border-box;
+                margin: 0 auto 29px;
+            }
+            .Contacts{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 224px;
+                margin-bottom: 36px;
+                .About{
+                    width: 221px;
+                    height: 224px;
+                    text-align: center;
+                    .pictures{
+                        position: relative;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 100px;
+                        margin: 0 auto 20px;
+                        .icons{
+                            position: absolute;
+                            left: 86px;
+                            top: 86px;
+                            width: 32px;
+                            height: 32px;
+                            border: 4px solid white;
+                            border-radius: 100px;
+                        }
+                        .music{
+                            background-image: url('../icons/music.svg');
+                            background-position: center;
+                            background-size: 36px 36px;
+                        }
+                        .brush{
+                            background-image: url('../icons/brush.svg');
+                            background-position: center;
+                            background-size: 36px 36px;
+                        }
+                        .camera{
+                            background-image: url('../icons/camera.svg');
+                            background-position: center;
+                            background-size: 36px 36px;
+                        }
+                        .plane{
+                            background-image: url('../icons/plane.svg');
+                            background-position: center;
+                            background-size: 36px 36px;
+                        }
+
+                    }
+                    .pic1{
+                        background-image: url('../images/pic1.png');
+                    }
+                    .pic2{
+                        background-image: url('../images/pic2.png');
+                    }
+                    .pic3{
+                        background-image: url('../images/pic3.png');
+                    }
+                    .pic4{
+                        background-image: url('../images/pic4.png');
+                    }
+                    .names{
+                        @extend %Montserrat-bold-list;
+                        font-weight: bold;
+                        font-size: 14px;
+                        color: black;
+                        margin-bottom: 24px;
+                    }
+                    .marg-name{
+                        margin-bottom: 30px;
+                    }
+                    .interests{
+                        @extend %roboto-list;
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: black;
+                    }
+                }
+            }
+            .underline{
+                text-decoration: none;
+            }
+            .seeMore{
+                @extend %Montserrat-bold-list;
+                width: 174px;
+                height: 34px;
+                border: 3px #FF4E50 solid;
+                border-radius: 40px;
+                text-align: center;
+                line-height: 34px;
+                color: #FF4E50;
+                font-weight: bold;
+                font-size: 14px;
+                margin: 0 auto 95px;
+                &:hover{
+                    background-color: #FF4E50;
+                    color: white;
+                    border: white 3px solid;
+                }
+            }
+            .activity-ideas{
+                width: 100%;
+                height: 1031px;
+                margin-bottom: 95px;
+                .marg-ideas{
+                    width: 413px;
+                    height: 32px;
+                    margin: 0 auto 30px;
+                }
+                .grid{
+                    display: grid;
+                    grid-template-columns: 300px 300px 300px;
+                    grid-template-rows: 310px 310px 310px;
+                    row-gap: 20px;
+                    column-gap: 20px;
+                    width: 100%;
+                    height: 970px;
+                    .gridPic1{
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        background-image: url('../images/Sport.png');
+                    }
+                    .gridPic2{
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        background-image: url('../images/Health.png');
+                    }
+                    .gridPic3{
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        background-image: url('../images/Extreme.png');
+                    }
+                    .gridPic4{
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                        background-image: url('../images/Games.png');
+                    }
+                    .gridPic5{
+                        grid-column-start: 2;
+                        grid-column-end: 4;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                        background-image: url('../images/Culture.png');
+                    }
+                    .gridPic6{
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                        background-image: url('../images/Culture\ Copy.png');
+                    }
+                    .gridPic7{
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                        background-image: url('../images/Games\ Copy.png');
+                    }
+                    .centrText{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        .gridtext{
+                            @extend %Montserrat-bold-list;
+                            font-weight: bold;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+            .bottom-content{
+                width: 482px;
+                height: 158px;
+                margin: 0 auto;
+                text-align: center;
+                .marg-crate{
+                    margin: 0 auto 51px;
+                }
+                .RobotoBottom{
+                    @extend %roboto-list;
+                    font-weight: 300;
+                    font-size: 18px;
+                    color: #666666;
+                    margin-bottom: 23px;
+                }
+                .search-form{
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    input[type="search"]{
+                        width: 280px;
+                        height: 40px;
+                        box-sizing: border-box;
+                        border: 1px solid #D4D4D4;
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                        border-radius: 3px;
+                        
+                    }
+                    .Search-button{
+                        @extend %Montserrat-bold-list;
+                        width: 172.12px;
+                        height: 40px;
+                        background-color: #FF4E50;
+                        border-radius: 40px;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 14px;
+                        border: none;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: #ca2d30;
+                            transform: scale(1.1);
+
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 224px;
+        box-sizing: border-box;
+        border-top: #FF4E50 3px solid;
+        padding: 40px 247px 0 249px;
+        .f-left{
+            float: left;
+        }
+        .Logo{
+            @extend %Montserrat-light-list;
+            font-size: 16px;
+            color: #FF4E50;;
+            width: 241px;
+        }
+        .Company-foter{
+            width: 239px;
+            height: 100%;
+            .boldtxt{
+                @extend %Montserrat-bold-list;
+                font-weight: bold;
+                font-size: 14px;
+                color: black;
+                margin-bottom: 11px;
+            }
+            .menu{
+                display: block;
+                @extend %roboto-list;
+                color: #999999;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 27px;
+                text-decoration: none;
+            }
+        }
+        .Partners-foter{
+            width: 351px;
+            height: 100%;
+            @extend %Montserrat-bold-list;
+            font-weight: bold;
+            font-size: 14px;
+            color: black;
+        }
+        .Logo-icon{
+            width: 110px;
+            text-align: right;
+            .by{
+                display: block;
+                @extend %Montserrat-bold-list;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 12px;
+                color: #CCCCCC;
+                letter-spacing: 1px;
+                margin-bottom: 6px;
+            }
+            .logo-icon1{
+                width: 110px;
+                height: 24px;
+                background-image: url('../images/logo-icon.png');
+            }
+            
+        }
+    }
+}
+@media screen and (max-width: 1460px){
+    .conteiner{
+        width: 768px;
+        height: 3679px;
+        .header{
+            background-position: center;
+            .header-absolute{
+                width: 100%;
+                padding: 40px 50px 224px 48px;
+                .Dreamshare{
+                    line-height: 27px;
+                }
+                .header-bottext{
+                    margin: 0 auto;
+                }
+            }
+        }
+        .content{
+            width: 100%;
+            padding-top: 95px;
+            height: 2735px;
+            .ContMainText{
+                width: 289px;
+                height: 27px;
+                font-size: 22px;
+                margin: 0 auto 35px;
+            }
+            .contentTop{
+                justify-content: space-around;
+                .Trio{
+                    width: 236px;
+                    .TrioAbsolute{
+                        padding: 0 20px;
+                        .inbox{
+                            height: 195px;
+                            .Steps{
+                                margin-bottom: 46px;
+                            }
+                            .BigTrioText{
+                                line-height: 14px;
+                                margin-bottom: 29px;
+                            }
+                        }
+                        .inPad{
+                            height: 145px;
+                            padding: 0;
+                            .mediaSteps{
+                                margin-bottom: 15px;
+                            }
+                            .BigTrioText-center{
+                                margin-bottom: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+            .Partners{
+                width: 100%;
+                height: 2084px;
+                margin: 0 auto;
+                .Partners-marg{
+                    width: 416px;
+                    height: 27px;
+                    margin: 0 auto 35px;
+                    font-size: 22px;
+                }
+                .Contacts{
+                    width: 492px;
+                    height: 464px;
+                    margin: 0 auto 40px;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .About{
+                        width: 236px;
+                        height: 205px;
+                    }
+                    .diana{
+                        height: 224px;
+                        order: 1;
+                        margin-bottom: 35px;
+                    }
+                    .order{
+                        order: 2;
+                        .media-name{
+                            margin-bottom: 22px;
+                        }
+                    }
+                    .underline{
+                        display: block;
+                        margin-top: 10px;
+                    }
+                    
+                }
+                .activity-ideas{
+                    width: 100%;
+                    height: 1031px;
+                    .marg-ideas{
+                        width: 350px;
+                        height: 27px;
+                        margin: 0 auto 32px;
+                    }
+                    .grid{
+                        width: 748px;
+                        margin: 0 auto;
+                        grid-template-columns: 236px 236px 236px;
+                        grid-template-rows: 310px 310px 310px;
+                        .gridPic1{background-position: center;}
+                        .gridPic2{background-position: center; text-align: center;}
+                        .gridPic3{background-position: center;}
+                        .gridPic4{background-position: center;}
+                        .gridPic5{background-position: center;}
+
+
+                    }
+                }
+                .marg-crate{
+                    width: 303px;
+                    height: 27px;
+                }
+
+            }
+            
+        }
+        .footer{
+            padding: 40px 30px 0 40px;
+            .Logo{
+                width: 227px;
+            }
+            .Company-foter{
+                width: 170px;
+            }
+            .Partners-foter{
+                width: 182px;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 790px){
+    .conteiner{
+        width: 320px;
+        height: 3938px;
+        .header{
+            height: 540px;
+            background-image: url('../images/Background\ mob.png');
+            background-size: cover;
+            .header-absolute{
+                width: 100%;
+                height: 540px;
+                padding: 20px 9px 153px 30px;
+                .text-1{
+                    width: 153px;
+                    height: 155px;
+                    margin: 0 55px 26px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .Dreamshare{
+                        line-height: 27px;
+                        width: 100%;
+                    }
+                    .groupLogSign{
+                        order: -1;
+                        width: 100%;
+                        height: 130px;
+                    }
+                }
+                .header-bottext{
+                    margin: 0 auto;
+                    height: 183.5px;
+                    width: 100%;
+                    .BigHeadText{
+                        width: 272px;
+                        height: 74px;
+                        font-size: 30px;
+                        line-height: 37px;
+                        margin-bottom: 8px;
+                    }
+                    .RobotoHead{
+                        width: 100%;
+                        height: 49px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        margin-bottom: 15px;
+                    }
+                    .underline{
+                        .buttom-head{
+                            width: 280px;
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            width: 300px;
+            padding-top: 38px;
+            height: 3172px;
+            margin: 0 auto;
+            .ContMainText{
+                width: 289px;
+                height: 27px;
+                font-size: 22px;
+                margin: 0 auto 12px;
+            }
+            .contentTop{
+                width: 100%;
+                height: 740px;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 40px;
+                .img1{
+                    background-image: url('../images/mob-img1.png');
+                }
+                .img2{
+                    background-image: url('../images/mob-img2.png');
+                }
+                .img3{
+                    background-image: url('../images/mob-img3.png');
+                }
+                .Trio{
+                    width: 300px;
+                    height: 240px;
+                    margin-bottom: 10px;
+                    .TrioAbsolute{
+                        padding: 64px 30px 16px 20px;
+                        .inbox{
+                            height: 160px;
+                            .BigTrioText{
+                                line-height: 14px;
+                                margin-bottom: 24px;
+                            }
+                        }
+                        .inPad{
+                            height: 130px;
+                            .mediaSteps{
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            .Partners{
+                width: 100%;
+                height: 2314px;
+                margin: 0 auto;
+                .Partners-marg{
+                    width: 280px;
+                    height: 54px;
+                    margin: 0 auto 9px;
+                    text-align: center;
+                    line-height: 22px;
+                }
+                .Contacts{
+                    width: 100%;
+                    height: 887px;
+                    margin: 0 auto 36px;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .About{
+                        width: 236px;
+                        height: 205px;
+                        margin: 0 auto 16px;
+                    }
+                    .diana{
+                        height: 224px;
+                        order: 1;
+                        margin-bottom: 16px;
+                    }
+                    .mob-about{
+                        height: 205px;
+                    }
+                    .order{
+                        order: 2;
+                        .media-name{
+                            margin-bottom: 24px;
+                        }
+                    }
+                    .underline{
+                        display: block;
+                        margin-top: 10px;
+                    }
+                    
+                }
+                .seeMore{
+                    width: 280px;
+                    margin-bottom: 36px;
+                }
+                .activity-ideas{
+                    width: 100%;
+                    height: 986px;
+                    margin-bottom: 40px;
+                    .marg-ideas{
+                        width: 200px;
+                        height: 54px;
+                        text-align: center;
+                        line-height: 26px;
+
+                    }
+                    .grid{
+                        width: 300px;
+                        height: 900px;
+                        margin: 0 auto;
+                        grid-template-columns: 300px;
+                        grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+                        row-gap: 10px;
+                        .gridPic1{
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 1;
+                            grid-row-end: 2;
+                            background-image: url('../images/Sport-mob1.png');
+                        }
+                        .gridPic2{
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 2;
+                            grid-row-end: 3;
+                            background-image: url('../images/Healath-mob2.png');
+                        }
+                        .gridPic3{
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 3;
+                            grid-row-end: 4;
+                            background-image: url('../images/Extreme-mob3.png');
+                        }
+                        .gridPic4{
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 4;
+                            grid-row-end: 5;
+                            background-image: url('../images/Games-mob4.png');
+                        }
+                        .gridPic5{
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 5;
+                            grid-row-end: 6;
+                            background-image: url('../images/Culture-mob5.png');
+                        }
+                        .gridPic6{
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 6;
+                            grid-row-end: 7;
+                            background-image: url('../images/Culture\ Copy-mob6.png');
+                        }
+                        .gridPic7{
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                            grid-row-start: 7;
+                            grid-row-end: 8;
+                            background-image: url('../images/Games\ Copy-mob7.png');
+                        }
+                    }
+                }
+                .bottom-content{
+                    width: 280px;
+                    height: 192px;
+                    .marg-crate{
+                        width: 280px;
+                        height: 54px;
+                        margin-bottom: 12px;
+                    }
+                    .RobotoBottom{
+                        margin-bottom: 14px;
+                    }
+                    .search-form{
+                        display: block;
+                        width: 280px;
+                        height: 90px;
+                        .search{
+                            width: 280px;
+                        }
+                        .Search-button{
+                            width: 280px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                
+
+            }
+            
+        }
+        .footer{
+            width: 320;
+            height: 204px;
+            padding: 19px 20px 22px;
+            display: block;
+            .Logo{
+                width: 119px;
+                margin: 0 auto 18px;
+            }
+            .Company-foter{
+                width: 192px;
+                height: 65px;
+                margin: 0 auto 10px;
+                text-align: center;
+                .boldtxt{
+                    margin-bottom: 2px;
+                }
+                .menu{
+                    display: inline;
+                }
+            }
+            .Partners-foter{
+                width: 64px;
+                height: 31px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .Logo-icon{
+                margin: 0 auto;
+                text-align: center;
+            }
+            .f-left{
+                float: none;
+            }
+        }
+
+    }
+}
